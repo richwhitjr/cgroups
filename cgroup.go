@@ -186,7 +186,7 @@ func (c *cgroup) Stat(handlers ...ErrorHandler) (*Metrics, error) {
 	}
 	var (
 		stats = &Metrics{
-			CPU: &CPUStat{
+			Cpu: &CPUStat{
 				Throttling: &Throttle{},
 				Usage:      &CPUUsage{},
 			},
